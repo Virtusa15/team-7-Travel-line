@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+
+margin-left: 30%;
+
+}
+
+
+</style>
+
+</head>
+<body>
+<font size="5"><b>Enter Credit-Card Details</b></font><br><br><br>
+<form method="post" action="payment">
+<b>Name:</b><span style="margin-left: 17%" ></span> <input type="text" placeholder="Enter name" name="name" required>( as on the credit card)<br><br>
+<b>Card Type:</b><span style="margin-left: 14%" ></span><select name="ctype">
+
+<option value="-1"selected="selected" disabled="disabled">Select your Card Type</option>
+ <option value="visa">visa</option>
+ <option value="paypal">Paypal</option>
+ <option value="Master Card">Master Card</option>
+ <option value="Maestro">maestro</option>
+ 
+ 
+</select><br><br>
+    <b>Card Number:</b><span style="margin-left: 12%" ></span>
+    <input type="number" placeholder="Enter number" name="number" required><br><br>
+    <b>Expiry Date:</b><span style="margin-left: 13%" ></span>
+    <select name="month">
+
+<option value="-1"selected="selected" disabled="disabled">Month</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+  <option value="5">5</option>
+   <option value="6">6</option>
+    <option value="7">7</option>
+     <option value="8">8</option>
+      <option value="9">9</option>
+       <option value="10">10</option>
+        <option value="11">11</option>
+         <option value="12">12</option>
+ 
+ 
+</select>
+    <select name="year">
+    <option value="-1" selected="selected" disabled="disabled">Year</option>
+    
+<option value="2024">2024</option>
+  <option value="2025">2025</option>
+   <option value="2026">2026</option>
+    <option value="2027">2027</option>
+     <option value="2028">2028</option>
+      <option value="2029">2029</option>
+       
+
+ 
+</select><br><br>
+   <b>Card Verfication Number:</b><span style="margin-left: 5%" ></span>
+    <input type="number" placeholder="Enter number" name="vnumber" required maxlength="3">(3 digit number)<br><br>
+   
+ 
+   <div style="margin-left: 18%">
+    <button type="submit"  >pay</button>
+       <button type="reset"  >reset
+       </button>
+</div>
+
+
+</form>
+</body>
+</html>

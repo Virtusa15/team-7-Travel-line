@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+<style type="text/css">
+span {
+    margin:  10px;
+}
+body {
+    background-image:url("o.jpg");
+    background-repeat:no-repeat;
+    background-size:400px;
+	background-color:white;
+	text-align: center;
+	
+	
+}
+</style>
+<script type="text/javascript">
+function loadDoc() {
+	
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	    	
+	    	alert(this.responseText);
+	    
+	    }
+	  };
+	  xhttp.open("GET", "servlet1", true);
+	  xhttp.send();
+	  return false;
+	}
+
+</script>
+</head>
+<body>
+<form action="servlet1">
+  
+
+  <div class="container">
+  <h1>Sign in</h1>
+   <b>Username</b>
+    
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <b>Password</b>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+ <span id="demo"></span>
+    <button type="submit"  >Login</button>
+   
+  </div>
+  <br>
+  <span></span>
+  <br>
+  </form>
+new user <a href="register.html" target="r2">REGISTER</a>
+  
+
+
+</body>
+</html>
